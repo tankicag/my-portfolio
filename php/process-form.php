@@ -29,6 +29,7 @@
 		$mail = new PHPMailer\PHPMailer\PHPMailer; // Make instance PHPMailer
 
 		// SERVER SETTINGS
+		$mail->SMTPDebug = 2;  
 		$mail->isSMTP(); // Set mailer to use SMTP           
 		$mail->Host = 'smtp.gmail.com'; // Set the hostname of the mail server     
 	    $mail->SMTPAuth = true; // Enable SMTP authentication                
