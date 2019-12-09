@@ -30,17 +30,17 @@
 
 		// SERVER SETTINGS
 		$mail->isSMTP(); // Set mailer to use SMTP           
-		$mail->Host = 'smtp1.example.com'; // Set the hostname of the mail server     
+		$mail->Host = 'smtp.gmail.com'; // Set the hostname of the mail server     
 	    $mail->SMTPAuth = true; // Enable SMTP authentication                
-	    $mail->Username = 'user@example.com'; // SMTP username
-	    $mail->Password = 'secret'; // SMTP password         
+	    $mail->Username = 'gonevatankica@gmail.com'; // SMTP username
+	    $mail->Password = 'secret123'; // SMTP password         
 	    $mail->SMTPSecure = 'tls'; // Enable TLS encryption, `ssl` also accepted         
 	    $mail->Port = 587; // TCP port to connect to                    
 
 
 	   	// RECIPIENTS
 	    $mail->setFrom($email, $name); // Set who the message is to be sent from
-	    $mail->addAddress('user@example.com', 'Your Name'); // Set who the message is to be sent to
+	    $mail->addAddress('gonevatankica@gmail.com', 'Tankica Goneva'); // Set who the message is to be sent to
 	    $mail->addReplyTo($email, $name); //Set an alternative reply-to address
 	    
 
