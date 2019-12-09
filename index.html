@@ -2272,7 +2272,7 @@
 											<!-- List Contact Info Ends -->
 										</div>
 									</div>
-									<!-- Contact Info Ends -->
+								<!-- Contact Info Ends -->
 									<!-- Contact Form Starts -->
 									<div id="contact-form">
 										<!-- Contact Form Heading Starts -->
@@ -2291,23 +2291,24 @@
 											<!-- Alert/Contact Message Ends -->
 											<!-- Form Wrapper Starts -->
 											<div class="form-wrapper col-lg-9 col-md-9 col-12">
-												<form name="contact" method="POST" action="php/process-form.php">
+												<!--<form name="contact" method="POST" action="php/process-form.php"> -->
+													<form action="https://formspree.io/xyyzowrj" method="POST">
 													<div class="form-group clearfix">
 														<div class="inner-form-group">
 															<input type="text" name="name" placeholder="Name" class="form-control" autocomplete="off" required>
 														</div>
 														<div class="inner-form-group">
-															<input type="email" name="email" placeholder="Email" class="form-control" autocomplete="off" required>
+															<input type="email" name="_replyto" placeholder="Email" class="form-control" autocomplete="off" required>
 														</div>
 													</div>
 													<div class="form-group">
-														<input type="text" name="subject" placeholder="Subject" class="form-control" autocomplete="off" required>
+														<input type="text" name="_subject"  placeholder="Subject" class="form-control" autocomplete="off" required>
 													</div>
 													<div class="form-group">
 														<textarea name="message" placeholder="Message" class="form-control" autocomplete="off" required></textarea>
 													</div>
 													<div class="form-group">
-														<button type="submit">
+														<input type="submit" value="Send">
 															<span class="front">
 																<i class="fas fa-paper-plane"></i>
 																<span class="value">Send <span>Message</span></span>
@@ -2316,14 +2317,14 @@
 																<i class="fas fa-paper-plane"></i>
 																<span class="value">Send <span>Message</span></span>
 															</span>
-														</button>
+														</input>
 													</div>
 												</form>
 											</div>
 											<!-- Form Wrapper Ends -->
 										</div>
-									</div>
-									<!-- Contact Form Ends -->
+									</div> 
+									<!-- Contact Form Ends --> 
 								</div>
 								<!-- Content Ends -->
 							</div>
