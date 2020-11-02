@@ -5,7 +5,7 @@
 /* Version       : 1.3                                            */
 /* ============================================================== */
 
-(function($) {
+(function ($) {
   "use strict";
 
   // Init Metronal
@@ -15,19 +15,19 @@
   metronal.mainContent = {
     list: ["#home", "#about", "#resume", "#portfolio", "#contact"],
     on: "",
-    off: ""
+    off: "",
   };
 
   // Pre Load
-  metronal.preLoad = function(duration) {
+  metronal.preLoad = function (duration) {
     $("#pre-load").fadeOut(parseInt(duration, 10));
   };
 
   // Replace Viewport Height
   // Solves the issue about the viewport height on mobile devices as when the page loads
-  metronal.replaceVHeight = function() {
+  metronal.replaceVHeight = function () {
     $("html").css({
-      height: $(window).height()
+      height: $(window).height(),
     });
   };
 
@@ -36,41 +36,41 @@
     // Item container
     container: $("#portfolio .portfolio-item .item-wrapper"),
     // Init function
-    init: function() {
+    init: function () {
       // Checking if all images are loaded
-      metronal.portfolioFilter.container.imagesLoaded(function() {
+      metronal.portfolioFilter.container.imagesLoaded(function () {
         // Init isotope once all images are loaded
         metronal.portfolioFilter.container.isotope({
           itemSelector: "#portfolio .portfolio-item .item-wrapper .item",
           layoutMode: "masonry",
-          transitionDuration: "0.8s"
+          transitionDuration: "0.8s",
         });
         // Forcing a perfect masonry layout after initial load
         metronal.portfolioFilter.container.isotope("layout");
         // Filter items when the button is clicked
-        $("#portfolio .portfolio-filter ul li").on("click", "a", function() {
+        $("#portfolio .portfolio-filter ul li").on("click", "a", function () {
           // Remove the current class from the previous element
           $("#portfolio .portfolio-filter ul li .current").removeClass(
-            "current"
+            "current",
           );
           // Add the current class to the button clicked
           $(this).addClass("current");
           // Data filter
           var selector = $(this).attr("data-filter");
           metronal.portfolioFilter.container.isotope({
-            filter: selector
+            filter: selector,
           });
-          setTimeout(function() {
+          setTimeout(function () {
             metronal.portfolioFilter.container.isotope("layout");
           }, 6);
           return false;
         });
       });
-    }
+    },
   };
 
   // Use Magnific Popup
-  metronal.useMagnificPopup = function() {
+  metronal.useMagnificPopup = function () {
     // For portfolio item
     $("#portfolio .portfolio-item .item-wrapper .item").magnificPopup({
       delegate: "a",
@@ -79,47 +79,25 @@
       mainClass: "mfp-fade",
       fixedContentPos: true,
       callbacks: {
-        beforeOpen: function() {
+        beforeOpen: function () {
           $("html").addClass("mfp-helper");
         },
-        close: function() {
+        close: function () {
           $("html").removeClass("mfp-helper");
-        }
-      }
+        },
+      },
     });
   };
 
-  // Set Skill Progress
-  metronal.setSkillProgress = function() {
-    // Select skill
-    var skill = $(".single-skill");
-    for (var i = 0; i < skill.length; i++) {
-      if (skill.eq(i).find(".percentage")[0].textContent == "100%") {
-        skill
-          .eq(i)
-          .find(".progress-wrapper .progress")
-          .css({
-            width: skill.eq(i).find(".percentage")[0].textContent,
-            borderRight: 0
-          });
-      } else {
-        skill
-          .eq(i)
-          .find(".progress-wrapper .progress")
-          .css("width", skill.eq(i).find(".percentage")[0].textContent);
-      }
-    }
-  };
-
   // Use TypeIt.js
-  metronal.useTypeIt = function() {
+  metronal.useTypeIt = function () {
     if (typeof TypeIt != "undefined") {
       new TypeIt(".passion", {
         speed: 200,
         startDelay: 800,
         strings: ["Front-end Developer"],
         breakLines: false,
-        loop: true
+        loop: true,
       });
     } else {
       return false;
@@ -127,20 +105,20 @@
   };
 
   // Progress Animation
-  metronal.progressAnimation = function() {
+  metronal.progressAnimation = function () {
     // Disable progress animation on IE Browser
     if (
       navigator.userAgent.indexOf("MSIE") !== -1 ||
       navigator.appVersion.indexOf("Trident/") > -1
     ) {
       $(".progress-wrapper .progress").css({
-        animation: "none"
+        animation: "none",
       });
     }
   };
 
   // Dynamic Page
-  metronal.dynamicPage = function(event, target) {
+  metronal.dynamicPage = function (event, target) {
     if (!event) {
       if (!target) {
         $("#home").addClass("active");
@@ -186,48 +164,42 @@
   };
 
   // Process Contact Form
-  metronal.processContactForm = function() {
+  metronal.processContactForm = function () {
     var form = $('form[name="contact"]'),
       message = $(".contact-msg"),
       formData;
 
     // Success Function
-    var doneFunc = function(response) {
+    var doneFunc = function (response) {
       message.text(response);
-      message
-        .removeClass("alert-danger")
-        .addClass("alert-success")
-        .fadeIn();
-      setTimeout(function() {
+      message.removeClass("alert-danger").addClass("alert-success").fadeIn();
+      setTimeout(function () {
         message.fadeOut();
       }, 2400);
       form.find('input:not([type="submit"]), textarea').val("");
     };
 
     // Fail Function
-    var failFunc = function(jqXHR, textStatus, errorThrown) {
+    var failFunc = function (jqXHR, textStatus, errorThrown) {
       if (jqXHR.status === 400) {
         message.text(jqXHR.responseText);
       } else {
         message.text(jqXHR.statusText);
       }
-      message
-        .removeClass("alert-success")
-        .addClass("alert-danger")
-        .fadeIn();
-      setTimeout(function() {
+      message.removeClass("alert-success").addClass("alert-danger").fadeIn();
+      setTimeout(function () {
         message.fadeOut();
       }, 2400);
     };
 
     // Form On Submit
-    form.on("submit", function(e) {
+    form.on("submit", function (e) {
       e.preventDefault();
       formData = $(this).serialize();
       $.ajax({
         type: "POST",
         url: form.attr("action"),
-        data: formData
+        data: formData,
       })
         .done(doneFunc)
         .fail(failFunc);
@@ -235,7 +207,7 @@
   };
 
   // Window On Resize
-  $(window).on("resize", function() {
+  $(window).on("resize", function () {
     metronal.replaceVHeight(),
       metronal.portfolioFilter.container.isotope("layout");
   });
@@ -243,14 +215,14 @@
   // Device Orientation Changes
   window.addEventListener(
     "orientationchange",
-    function() {
+    function () {
       metronal.replaceVHeight(),
         metronal.portfolioFilter.container.isotope("layout");
     },
-    false
+    false,
   );
 
-  // Menu Link On Click
+  /*   // Menu Link On Click
   $(".menu-link").on("click", function(e) {
     metronal.dynamicPage(e, $(this)[0].hash);
   });
@@ -259,29 +231,36 @@
   $(".close-menu-link").on("click", function(e) {
     metronal.dynamicPage(e, $(this)[0].hash);
   });
-
+ */
   // Contact Button On Click
-  $("#contact-button").on("click", function(e) {
+  $("#contact-button").on("click", function (e) {
     metronal.dynamicPage(e, $(this)[0].hash);
   });
 
   // Prevent Default 'a[href=""]' click
-  $('a[href="#"]').on("click", function(e) {
+  $('a[href="#"]').on("click", function (e) {
     e.preventDefault();
   });
 
   // Window On Load
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     metronal.preLoad(800);
   });
 
+  // ScrollToTop
+  $(document).ready(function () {
+    $("#btnScrollToTop").click(function () {
+      window.scrollTo(0, 0);
+    });
+  });
+
   // Document Ready
-  $(document).ready(function() {
+  $(document).ready(function () {
     metronal.dynamicPage(undefined, window.location.hash),
       metronal.replaceVHeight(),
-      metronal.portfolioFilter.init(),
+      // metronal.portfolioFilter.init(),
       metronal.useMagnificPopup(),
-      metronal.setSkillProgress(),
+      // metronal.setSkillProgress(),
       metronal.progressAnimation(),
       metronal.useTypeIt(),
       metronal.processContactForm();
