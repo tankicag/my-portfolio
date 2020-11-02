@@ -1140,7 +1140,7 @@ html.mfp-helper {
   text-align: left;
 }
 
-#contact-info > div > div.list-contact-info.col-6 > ul > li.col-sm-6.col-4,
+#contact-info > div > div.list-contact-info.col-6 > ul > li.col-8,
 #contact-info > div > div.list-contact-info.col-6 > ul > li:nth-child(2) {
   text-align: left;
 }
