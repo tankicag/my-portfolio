@@ -4555,7 +4555,7 @@ input.form-control {
   }
 
   .main-content#home .inner-content .head-content h3 {
-    font-size: 38px;
+    font-size: 35px;
     line-height: 45px;
     margin-bottom: 3px;
   }
@@ -4608,13 +4608,19 @@ input.form-control {
 }
 
 @media (max-width: 575px) and (max-height: 450px) {
+  .main-content#home .inner-content .head-content h3 {
+    font-size: 30px;
+    line-height: 31px;
+    margin-bottom: 19px;
+  }
+
   .main-content .inner-content .head-content {
     height: -webkit-calc((40px * 2) + 1.424em - 8px);
     height: -moz-calc((40px * 2) + 1.424em - 8px);
     height: calc((40px * 2) + 1.424em - 8px);
   }
 
-/*   .main-content#home .inner-content .head-content {
+  /*   .main-content#home .inner-content .head-content {
     height: -webkit-calc((30px * 2) + 15px + (1.424em + 1.125em) - 4px);
     height: -moz-calc((30px * 2) + 15px + (1.424em + 1.125em) - 4px);
     height: calc((30px * 2) + 15px + (1.424em + 1.125em) - 4px);
@@ -4626,7 +4632,7 @@ input.form-control {
     );
     height: -moz-calc(100% - ((30px * 3) + 15px + (1.424em + 1.125em) - 4px));
     height: calc(100% - ((30px * 3) + 15px + (1.424em + 1.125em) - 4px));
-  } 
+  }
 
   .main-content#about .inner-content .content #personal-info .row {
     margin-bottom: 38px;
@@ -4739,18 +4745,18 @@ input.form-control {
 }
 
 @media (max-height: 380px) {
-  .main-content#home .inner-content .head-content h3 {
+/*   .main-content#home .inner-content .head-content h3 {
     font-size: 30px;
     line-height: 31px;
     margin-bottom: 19px;
   }
-
+ */
   .main-content .inner-content .head-content h5 {
     font-size: 13px;
   }
   .row .no-gutters {
     padding: 0px 10px 37px;
-}
+  }
   .main-content .hanging .text-hanging h6 {
     letter-spacing: 0.5em;
     font-size: 0.9em;
@@ -4765,3 +4771,5 @@ input.form-control {
     text-align: center;
   }
 }
+
+
