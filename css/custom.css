@@ -4507,6 +4507,10 @@ input.form-control {
 }
 
 @media (max-width: 575px) {
+  header{
+    margin-top: 30px;
+  }
+
   h1 {
     font-size: 1.802em;
   }
@@ -4537,10 +4541,13 @@ input.form-control {
     height: calc((50px * 2) + 1.424em - 8px);
   }
 
-  .main-content .inner-content .head-content h3 {
-    top: 1px;
+  .main-content#home .inner-content .head-content h3 {
+    top: 3px;
   }
-
+  
+  .button-wrapper .single-button a{
+  margin-right: 0px;
+  }
   .main-content#home .inner-content .head-content {
     height: -webkit-calc((50px * 2) + 15px + (1.424em + 1.125em) - 4px);
     height: -moz-calc((50px * 2) + 15px + (1.424em + 1.125em) - 4px);
