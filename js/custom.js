@@ -31,7 +31,7 @@
     });
   };
 
-  // Portfolio Filter
+ /*  // Portfolio Filter
   metronal.portfolioFilter = {
     // Item container
     container: $("#portfolio .portfolio-item .item-wrapper"),
@@ -68,7 +68,7 @@
       });
     },
   };
-
+ */
   // Use Magnific Popup
   metronal.useMagnificPopup = function () {
     // For portfolio item
@@ -206,7 +206,7 @@
     });
   };
 
-  // Window On Resize
+/*   // Window On Resize
   $(window).on("resize", function () {
     metronal.replaceVHeight(),
       metronal.portfolioFilter.container.isotope("layout");
@@ -220,7 +220,7 @@
         metronal.portfolioFilter.container.isotope("layout");
     },
     false,
-  );
+  ); */
 
   /*   // Menu Link On Click
   $(".menu-link").on("click", function(e) {
@@ -248,11 +248,7 @@
   });
 
   // ScrollToTop
-  $(document).ready(function () {
-    $("#btnScrollToTop").click(function () {
-      window.scrollTo(0, 0);
-    });
-  });
+ 
 
   // Document Ready
   $(document).ready(function () {
