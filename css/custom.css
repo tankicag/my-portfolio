@@ -468,9 +468,7 @@ i {
   background-position: center center;
   background-size: cover;
   background-image: url("../img/tankica-profile-photo.png");
-  clip-path: circle();
-  float: left;
-  margin-right: 40px;
+  margin: 0 auto;
 }
 
 .button-wrapper .single-button {
@@ -614,7 +612,8 @@ i {
   color: #a8a8a8;
   text-align: left;
   padding: 32px 14px 33px;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 24.5px;
 }
 
 /*=================================================================*/
@@ -4042,11 +4041,36 @@ input.form-control {
       margin: 0 0 20px 0px;
     }
     .row .no-gutters {
-      padding: 0px 20px 37px;
+      padding: 20px 20px 37px;
     }
+
     .profile-picture {
-      margin-right: 0px;
+      width: 200px;
+      height: 200px;
     }
+
+    .button-wrapper .single-button {
+      margin-bottom: 12px;
+      line-height: 50px;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .single-service:nth-of-type(n + 1),
+    .single-skills-wrapper:nth-of-type(2n + 1),
+    .single-education:nth-of-type(2n + 1),
+    .single-experience:nth-of-type(2n + 1) {
+      padding-right: 0;
+      margin-top: 20px;
+    }
+
+    .single-service:first-child {
+      margin-top: 0px;
+    }
+
     .project-popup {
       padding-bottom: 30px;
     }
@@ -4745,7 +4769,7 @@ input.form-control {
 }
 
 @media (max-height: 380px) {
-/*   .main-content#home .inner-content .head-content h3 {
+  /*   .main-content#home .inner-content .head-content h3 {
     font-size: 30px;
     line-height: 31px;
     margin-bottom: 19px;
@@ -4771,5 +4795,3 @@ input.form-control {
     text-align: center;
   }
 }
-
-
