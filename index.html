@@ -1365,10 +1365,12 @@
                       <!-- Contact Info Heading Ends -->
                       <div class="row no-gutters">
                         <!-- List Contact Info Starts -->
-                        <div class="list-contact-info col-6">
+                        <div
+                          class="list-contact-info col-sm-12 col-lg-6 col-md-6 col-xs-12"
+                        >
                           <ul class="row">
                             <!-- List Contact Info Ends -->
-                            <li class="col-sm-12 col-lg-8 col-md-8 col-8">
+                            <li class="col-sm-12 col-lg-8 col-md-6 col-xs-12">
                               <span class="contact-info-name">Email</span>
                               <span class="icon-of-value">
                                 <i class="fas fa-envelope"></i>
@@ -1377,7 +1379,7 @@
                             </li>
                             <!-- Single Contact Info Ends -->
                             <!-- Single Contact Info Starts -->
-                            <li class="col-8">
+                            <li class="col-sm-12 col-lg-8 col-md-6 col-xs-12">
                               <span class="contact-info-name">Website</span>
                               <span class="icon-of-value">
                                 <i class="fas fa-globe"></i>
@@ -1386,7 +1388,7 @@
                             </li>
                             <!-- Single Contact Info Ends -->
                             <!-- Single Contact Info Starts -->
-                            <li class="col-8">
+                            <li class="col-sm-12 col-lg-8 col-md-6 col-xs-12">
                               <span class="contact-info-name"
                                 >Social Media</span
                               >
@@ -1463,10 +1465,12 @@
                         <!-- List Contact Info Ends -->
                         <!-- Alert/Contact Message Starts -->
                         <div
-                          class="alert contact-msg col-sm-12 col-lg-6 col-md-6 col-6"
+                          class="alert contact-msg col-sm-12 col-lg-6 col-md-6 col-xs-12"
                         >
                           <!-- Alert/Contact Message Ends -->
-                          <div class="note col-sm-12 col-lg-6 col-md-6 col-12">
+                          <div
+                            class="note col-sm-12 col-lg-12 col-md-8 col-xs-12"
+                          >
                             <!-- Single Paragraph Starts -->
                             <!-- Note Starts -->
                             <p>Want to chat? Send me a message!</p>
@@ -1474,7 +1478,9 @@
                           </div>
                           <!-- Note Ends -->
                           <!-- Form Wrapper Starts -->
-                          <div class="form-wrapper col-lg-8 col-md-6 col-8">
+                          <div
+                            class="form-wrapper col-sm-12 col-lg-12 col-md-8 col-xs-12"
+                          >
                             <!--<form name="contact" method="POST" action="php/process-form.php"> -->
                             <form
                               action="https://formspree.io/xyyzowrj"
@@ -1552,7 +1558,7 @@
               </section>
               <section>
                 <div>
-                  <button id="btnScrollToTop">
+                  <button id="btnScrollToTop" onclick="topFunction()">
                     <i class="fas fa-chevron-up"></i>
                   </button>
                 </div>
@@ -1570,6 +1576,31 @@
     <!-- Wrapper Ends -->
 
     <!-- JS Files -->
+    <script>
+      var mybutton = document.getElementById("btnScrollToTop");
+      /* 
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      } */
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
@@ -1577,6 +1608,5 @@
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/typeit.min.js"></script>
     <script src="js/custom.js"></script>
-    <script></script>
   </body>
 </html>

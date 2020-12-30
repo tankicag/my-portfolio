@@ -1396,6 +1396,10 @@ input.form-control {
   cursor: pointer;
 }
 
+.list-contact-info > ul.row {
+  text-align: left;
+}
+
 #btnScrollToTop:active {
   background-color: red;
 }
@@ -4085,6 +4089,13 @@ input.form-control {
       flex: unset;
       max-width: unset;
     }
+    .list-contact-info > li {
+      margin-right: auto;
+      text-align: left;
+    }
+    .form-group:last-child {
+      text-align: center;
+    }
   }
   .skill-name {
     display: flex;
@@ -4667,6 +4678,13 @@ input.form-control {
     > ul
     > li {
     margin-bottom: 18px;
+  }
+  .list-contact-info > .row > li {
+    margin-right: auto;
+    text-align: left;
+  }
+  .form-group:last-child {
+    text-align: center;
   }
 }
 
