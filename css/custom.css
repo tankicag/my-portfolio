@@ -2,6 +2,16 @@
 /* [ General ]                                                  */
 /*=================================================================*/
 
+html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
 html,
 body,
 div,
@@ -1382,8 +1392,11 @@ input.form-control {
   margin-right: 0;
 }
 
-#btnScrollToTop {
+.scrollUp {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   right: 40px;
   bottom: 10px;
   width: 50px;
@@ -1396,12 +1409,12 @@ input.form-control {
   cursor: pointer;
 }
 
-.list-contact-info > ul.row {
-  text-align: left;
+.scrollUp:active {
+  background-color: red;
 }
 
-#btnScrollToTop:active {
-  background-color: red;
+.list-contact-info > ul.row {
+  text-align: left;
 }
 
 /*=================================================================*/

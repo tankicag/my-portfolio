@@ -1557,11 +1557,9 @@
                 <!-- Inner Content Ends -->
               </section>
               <section>
-                <div>
-                  <button id="btnScrollToTop" onclick="topFunction()">
-                    <i class="fas fa-chevron-up"></i>
-                  </button>
-                </div>
+                <a href="" class="scrollUp">
+                  <i class="fas fa-chevron-up"></i>
+                </a>
               </section>
               <!-- Contact Section Ends -->
             </div>
@@ -1574,33 +1572,8 @@
       <!-- Container Fluid Ends -->
     </div>
     <!-- Wrapper Ends -->
-
+  </main>
     <!-- JS Files -->
-    <script>
-      var mybutton = document.getElementById("btnScrollToTop");
-      /* 
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      } */
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
