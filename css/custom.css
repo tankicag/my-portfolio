@@ -4111,10 +4111,10 @@ input.form-control {
 =======
 >>>>>>> parent of 3483bf7... mobile changes
 
-    .project-popup .project-source {
-      display: block;
-      width: 100%;
-    }
+  .project-popup .project-source {
+    display: block;
+    width: 100%;
+  }
 
     .main-content .inner-content .head-content {
       height: -webkit-calc((50px * 2) + 1.728em - 9px);
