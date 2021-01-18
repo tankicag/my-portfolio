@@ -31,7 +31,7 @@
     });
   };
 
- /*  // Portfolio Filter
+  /*  // Portfolio Filter
   metronal.portfolioFilter = {
     // Item container
     container: $("#portfolio .portfolio-item .item-wrapper"),
@@ -206,7 +206,7 @@
     });
   };
 
-/*   // Window On Resize
+  /*   // Window On Resize
   $(window).on("resize", function () {
     metronal.replaceVHeight(),
       metronal.portfolioFilter.container.isotope("layout");
@@ -248,7 +248,29 @@
   });
 
   // ScrollToTop
- 
+  var mybutton = document.querySelector("#btnScrollToTop");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  window.onscroll = function () {
+    scrollFunction();
+  };
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  mybutton.addEventListener("click", topFunction);
 
   // Document Ready
   $(document).ready(function () {

@@ -1536,6 +1536,26 @@ input.form-control {
   .main-content#contact .inner-content .content #contact-info > .row {
     padding: 33px 30px 27px;
   }
+
+  .btnScrollToTop {
+    position: fixed;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    right: 40px;
+    bottom: 10px;
+    bottom: 10px;
+    width: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .btnScrollToTop {
+    text-align: left;
+    background-color: red;
+  }
 }
 @media (min-width: 1600px) {
   body {
