@@ -1394,6 +1394,7 @@ input.form-control {
   outline: none;
   border: none;
   cursor: pointer;
+  display: none;
 }
 
 .list-contact-info > ul.row {
@@ -1401,7 +1402,7 @@ input.form-control {
 }
 
 #btnScrollToTop:active {
-  background-color: red;
+  background-color: #f2b488;
 }
 
 /*=================================================================*/
@@ -1537,26 +1538,25 @@ input.form-control {
     padding: 33px 30px 27px;
   }
 
-  .btnScrollToTop {
+  #btnScrollToTop {
     position: fixed;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    right: 40px;
     right: 40px;
     bottom: 10px;
-    bottom: 10px;
     width: 50px;
-    width: 50px;
-    cursor: pointer;
+    height: 50px;
+    border-radius: 50%;
+    background: #00f7ef;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+    display: none;
   }
-
-  .btnScrollToTop {
-    text-align: left;
-    background-color: red;
+  #btnScrollToTop i {
+    display: inline-block;
+    color: #ffffff;
   }
 }
+
 @media (min-width: 1600px) {
   body {
     font-size: 15px;
