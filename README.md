@@ -1,3 +1,3 @@
 My Portfolio 👩‍💻
 
-https://tankicag.github.io/
+www.tanicoder.com
