@@ -164,7 +164,7 @@
   };
 
   // Process Contact Form
-  metronal.processContactForm = function () {
+  /*   metronal.processContactForm = function () {
     var form = $('form[name="contact"]'),
       message = $(".contact-msg"),
       formData;
@@ -204,7 +204,7 @@
         .done(doneFunc)
         .fail(failFunc);
     });
-  };
+  }; */
 
   /*   // Window On Resize
   $(window).on("resize", function () {
