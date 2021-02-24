@@ -646,20 +646,33 @@ i {
 .fun-fact-body > i {
   color: #00f7ef;
   margin-right: 13px;
+  margin-left: 13px;
 }
 .skill-name {
   margin-right: 13px;
   padding: 13px 8px 13px;
 }
-
+.single-skill > ul,
+.skill-set {
+  display: inline-block;
+  text-align: left;
+}
 /*=================================================================*/
 /* [ Education ]                                                  */
 /*=================================================================*/
-
-.single-education {
+.single-skills-wrapper,
+.single-education,
+.single-experience {
   padding-bottom: 20px;
 }
 
+.certificates {
+  color: #fff;
+}
+
+.certificates:hover {
+  color: #00f7ef;
+}
 .education .single-education ul ul,
 .single-experience ul ul {
   padding: 32px 14px 32px;
@@ -1112,6 +1125,10 @@ html.mfp-helper {
 .project-popup .project-info .list-info-project li .separator,
 .project-popup .project-info .list-info-project li .value {
   color: #212529;
+}
+
+.more-project-links {
+  text-align: left;
 }
 
 /*=================================================================*/
