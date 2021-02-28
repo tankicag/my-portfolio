@@ -295,6 +295,7 @@ h6 {
   padding-right: 30px;
 }
 
+
 .main-content .inner-content .head-content {
   height: -webkit-calc((60px * 2) + 2.369em - 11px);
   height: -moz-calc((60px * 2) + 2.369em - 11px);
@@ -320,14 +321,16 @@ h6 {
   -webkit-align-items: center;
   align-items: center;
 }
-
+.head-name {
+  padding-top: 20%;
+}
 .main-content .inner-content .head-content h3 {
   text-transform: uppercase;
   margin: 0;
   position: relative;
   z-index: 10;
   line-height: 1;
-  font-size: 54px;
+  font-size: 65px;
   font-weight: 800;
   gap: normal;
   line-height: 54px;
@@ -340,7 +343,7 @@ h6 {
   font-weight: 400;
   line-height: 1;
   font-style: italic;
-  margin: 0;
+  margin: 20px 0;
   font-size: 24px;
   gap: normal;
   line-height: 24px;
@@ -358,6 +361,10 @@ h6 {
   position: relative;
 }
 
+.main-menu {
+  padding-top: 15%;
+  padding-bottom: 5%;
+}
 .main-menu ul {
   display: flex;
   padding: 20px 5px;
