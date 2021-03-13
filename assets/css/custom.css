@@ -341,7 +341,12 @@ h6 {
 .single-skills-wrapper:nth-of-type(n + 1),
 .single-education:nth-of-type(n + 1),
 .single-experience:nth-of-type(n + 1) {
-  padding-right: 0;
+  padding: 0 10px;
+}
+
+.single-skills-wrapper:nth-of-type(n + 1),
+.single-education:nth-of-type(n + 1),
+.single-experience:nth-of-type(n + 1) {
   margin-top: 20px;
 }
 .main-content .inner-content .head-content h5 {
@@ -398,6 +403,10 @@ i {
   background: rgb(54, 59, 95);
   border-radius: 5px;
   position: relative;
+ 
+}
+
+.box-wrapper{
   margin: 0 0 20px 20px;
 }
 
@@ -452,7 +461,7 @@ i {
   gap: normal;
   line-height: 28px;
   margin: 38px 0px 78px;
-  padding: 42px 40px 37px;
+  padding: 20px 10px;
   text-align: left;
 }
 
@@ -592,7 +601,7 @@ i {
 .single-skills-wrapper:nth-of-type(odd),
 .single-education:nth-of-type(odd),
 .single-experience:nth-of-type(odd) {
-  padding-right: 20px;
+  padding: 0 10px;
 }
 
 .single-service ul .service-name,
@@ -4698,7 +4707,7 @@ input.form-control {
     .single-skills-wrapper:nth-of-type(n + 1),
     .single-education:nth-of-type(n + 1),
     .single-experience:nth-of-type(2n + 1) {
-      padding-right: 0;
+      padding: 0;
       margin-top: 20px;
     }
 
