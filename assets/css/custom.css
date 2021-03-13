@@ -347,7 +347,7 @@ h6 {
 .single-skills-wrapper:nth-of-type(n + 1),
 .single-education:nth-of-type(n + 1),
 .single-experience:nth-of-type(n + 1) {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 .main-content .inner-content .head-content h5 {
   font-weight: 400;
@@ -461,7 +461,7 @@ i {
   gap: normal;
   line-height: 28px;
   margin: 38px 0px 78px;
-  padding: 20px 10px;
+  padding: 20px 20px;
   text-align: left;
 }
 
