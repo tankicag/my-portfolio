@@ -31,7 +31,7 @@
     });
   };
 
-  /*  // Portfolio Filter
+  // Portfolio Filter
   metronal.portfolioFilter = {
     // Item container
     container: $("#portfolio .portfolio-item .item-wrapper"),
@@ -68,7 +68,7 @@
       });
     },
   };
- */
+
   // Use Magnific Popup
   metronal.useMagnificPopup = function () {
     // For portfolio item
@@ -272,11 +272,11 @@
   $(document).ready(function () {
     metronal.dynamicPage(undefined, window.location.hash),
       metronal.replaceVHeight(),
-      // metronal.portfolioFilter.init(),
+      metronal.portfolioFilter.init(),
       metronal.useMagnificPopup(),
       // metronal.setSkillProgress(),
       metronal.progressAnimation(),
-      metronal.useTypeIt(),
-      metronal.processContactForm();
+      metronal.useTypeIt();
+      // metronal.processContactForm();
   });
 })(jQuery);

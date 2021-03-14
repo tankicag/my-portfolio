@@ -673,11 +673,18 @@ i {
   margin-right: 13px;
   padding: 13px 8px 13px;
 }
+
+.skill-set{
+  width: 40%;
+}
+
 .single-skill > ul,
 .skill-set {
   display: inline-block;
   text-align: left;
 }
+
+
 /*=================================================================*/
 /* [ Education ]                                                  */
 /*=================================================================*/
@@ -947,6 +954,25 @@ i {
   line-height: 1.5;
   color: #00f7ef;
   text-align: left;
+}
+
+#projects .portfolio-filter ul li {
+  display: inline-block;
+  margin-bottom: 34px;
+  margin-right: 24px;
+}
+
+#projects .portfolio-filter ul li a {
+  color: #fff
+}
+
+#projects .portfolio-filter ul li a.current {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.75em 1.25em;
 }
 
 .project-popup {
