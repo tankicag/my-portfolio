@@ -1,10 +1,3 @@
-/* ============================================================== */
-/* Template Name : Metronal - Personal Portfolio Page             */
-/* Author        : Rietts Andreas Ruff                            */
-/* Author URI    : https://themeforest.net/user/riettsruff        */
-/* Version       : 1.3                                            */
-/* ============================================================== */
-
 (function ($) {
   "use strict";
 
@@ -51,7 +44,7 @@
         $("#portfolio .portfolio-filter ul li").on("click", "a", function () {
           // Remove the current class from the previous element
           $("#portfolio .portfolio-filter ul li .current").removeClass(
-            "current",
+            "current"
           );
           // Add the current class to the button clicked
           $(this).addClass("current");
@@ -277,6 +270,6 @@
       // metronal.setSkillProgress(),
       metronal.progressAnimation(),
       metronal.useTypeIt();
-      // metronal.processContactForm();
+    // metronal.processContactForm();
   });
 })(jQuery);
