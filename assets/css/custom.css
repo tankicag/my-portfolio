@@ -403,10 +403,9 @@ i {
   background: rgb(54, 59, 95);
   border-radius: 5px;
   position: relative;
- 
 }
 
-.box-wrapper{
+.box-wrapper {
   margin: 0 0 20px 20px;
 }
 
@@ -674,7 +673,7 @@ i {
   padding: 13px 8px 13px;
 }
 
-.skill-set{
+.skill-set {
   width: 40%;
 }
 
@@ -683,7 +682,6 @@ i {
   display: inline-block;
   text-align: left;
 }
-
 
 /*=================================================================*/
 /* [ Education ]                                                  */
@@ -963,7 +961,7 @@ i {
 }
 
 #projects .portfolio-filter ul li a {
-  color: #fff
+  color: #fff;
 }
 
 #projects .portfolio-filter ul li a.current {
@@ -1015,7 +1013,7 @@ i {
 
 .project-popup .project-info {
   margin-bottom: 23px;
-  padding-right: 13%;
+  /* padding-right: 13%; */
 }
 
 .project-popup .project-info .list-info-project {
@@ -1043,6 +1041,7 @@ i {
   -o-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
+
 .project-popup .project-source {
   background: #474f7e;
   color: #fff;
@@ -1099,6 +1098,11 @@ i {
   -o-transform: scale(1);
   transform: scale(1);
   opacity: 1;
+}
+
+a.project-source.btn-full {
+  display: block;
+  width: 100%;
 }
 
 /* Magnific Popup Helper */
@@ -1169,8 +1173,25 @@ html.mfp-helper {
   color: #212529;
 }
 
+.more-projects {
+  padding-top: 20px;
+}
+
 .more-project-links {
   text-align: left;
+  display: inline-flex;
+  gap: 25px;
+}
+.more-project-links li {
+  display: inline;
+}
+
+.more-project-links p {
+  text-align: center;
+}
+
+.more-project-links > a.profile-picture {
+  width: 33%;
 }
 
 /*=================================================================*/
