@@ -4200,8 +4200,8 @@ input.form-control {
       font-size: 8px;
     }
 
-  .tag-icon > i,
-    .view-more > span i  {
+    .tag-icon > i,
+    .view-more > span i {
       font-size: 10px;
     }
 
@@ -4249,6 +4249,10 @@ input.form-control {
     .project-popup .project-source {
       display: block;
       width: 100%;
+    }
+
+    .more-project-links {
+      display: block;
     }
 
     .main-content .inner-content .head-content {
